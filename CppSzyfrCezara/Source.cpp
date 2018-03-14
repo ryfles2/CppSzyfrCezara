@@ -3,7 +3,11 @@
 #include <string>
 #include <locale.h>
 
+
 using namespace std;
+
+
+
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -47,7 +51,7 @@ void main()
 	{
 		for (auto i = 0; i < tString.size(); i++)
 		{
-			if (48 <= tString[i] <= 57 || 65 <= tString[i] <= 90)
+			if (48 <= tString[i] && tString[i] <= 57 || 65 <= tString[i] && tString[i] <= 90)
 			{
 				for (auto j = 0; j < szyfr; j++)
 				{
@@ -62,7 +66,7 @@ void main()
 	{
 		for (auto i = 0; i < tString.size(); i++)
 		{
-			if (48 <= tString[i] <= 57 || 65 <= tString[i] <= 90)
+			if (48 <= tString[i] && tString[i] <= 57 || 65 <= tString[i] && tString[i] <= 90)
 			{
 				for (auto j = 0; j < szyfr; j++)
 				{
@@ -73,7 +77,6 @@ void main()
 			}
 		}
 	}
-
 
 	cout << tString << endl;
 	tFiles << tString;
